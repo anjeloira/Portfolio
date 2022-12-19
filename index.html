@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<title>My Portfolio</title>
+</head>
+    
+        <header>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#background">Background</a></li>
+            </ul>
+        </header>
+<body>
+
+   <section id="home">
+
+  
+      <div class="text">
+        <h1 class="anim">Hi,</h1>
+        <h2 class="anim">I'm <span class="anim">Anjelo</span></h2>
+        <p class="anim">A Web Designer</p>
+      </div>
+
+      <img src="img/me.jpg" class="me-img anim">
+      <ul class="social anim">
+        <li><a href="https://www.facebook.com/study.first.before.the.love"><img src="img/social/facebook.png" class="anim"></a></li>
+        <li><a href="https://twitter.com/KaoRinnN125"><img src="img/social/twitter.png" class="anim"></a></li>
+        <li><a href="https://www.instagram.com/i.m_jelo/"><img src="img/social/instagram.png" class="anim"></a></li>
+      </ul> 
+    </section>
+
+
+    <section id="about">
+        <div class="abdiv">
+            <img src="img/me.jpg" class="avt">
+        <div class="abmain">
+        <h2><span>Anjelo Serafica Ira</span></h2>
+        <p>The programming language that I was using for my web designing are Java, PHP, HTML, CSS, and Javascript. I decided to take the IT course at Central Luzon State University and take a major in Web Development. Since in Senior High School it was my dream to become a website designer and become a student at CLSU. It was a great achievement for me to being accepted at the university and have a chance to take the course of my dream.</p><br><br>
+
+        <p>Today I'm till working hard to achieve my goal, it is a blessed that I am a Fourth Year College now and one step further to my dreams. I enjoy coding when it come on front-end which is the designing of the webpage because for me having a beautifull website will you achieve when you work hard.</p>
+    </div>
+    <ul class="thumb">
+            <li><img src="img/me.jpg" onclick="imgSlider('img/me.jpg')"></li>
+            <li><img src="img/avt1.jpg" onclick="imgSlider('img/avt1.jpg')"></li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggle()"></div>
+
+    </section>
+
+
+    <section id="project">
+        <div class="proj">
+            <center><h2><span>My Projects</span></h2></center><br><br>
+            <center><a href="img/bb.png" data-lightbox="mygalley"><img src="img/bb.png" class="gal"></a>
+            <a href="img/jc.png" data-lightbox="mygalley"><img src="img/jc.png" class="gal"></a>
+            <a href="img/dngo.png" data-lightbox="mygalley"><img src="img/dngo.png" class="gal"></a></center><br><br>
+        </div>
+        </div>  
+        <p id="bbb">BlueBox Cinema - Movie Review</p>
+        <p id="jjc">Authentic Japanese Cuisine Restaurant</p>
+        <p id="dn"><a href="https://dashngo.000webhostapp.com/dngo">Dash N Go Philippines</a></p><br>
+        <p id="content">The BlueBox Cinema are a pair project with Leah Anne Miranda. It was a PHP Ajax that have 2 interface the Admin and Visitors, the admin take care of inserting, updating, and, deleting movies, while the visitors can review and rate the movies.</p>
+        <p id="content1">The Authentic Japanese Cuisine Restaurant is an individual project that I created in HTML and CSS that was a responsive and followed a High Fidelity Wireframe. You can choose food to buy by delivery, or Reserve a table</p>
+        <p id="content2">The Dash N Go Philippines Travel Tour are a group project with Earl Justine Martinez, and Kein Henrick Ostan. It was travel agency that book travels to the tourist destination in the Philippine. My part is the web designing and front-end</p>
+    </section>
+
+
+    <section id="background">
+        <div class="back">
+            <center><h2><span>Educational Background</span></h2></center>
+        </div><center>
+        <img src="img/lcs.png" class="logo">
+        <img src="img/djcnhs.png" class="logo">
+        <img src="img/cl.png" class="logo"></center>
+    </section>
+
+
+
+ <center><p>©2022 Anjelo S. Ira Portfolio</p></center>
+</body>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.avt').src = anything;
+    }
+</script>
+</html>
